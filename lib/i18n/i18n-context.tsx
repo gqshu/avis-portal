@@ -5,7 +5,7 @@ import type React from "react"
 import { createContext, useContext, useState, useEffect, useCallback } from "react"
 import { translations } from "./translations"
 
-type Locale = "en" | "fr"
+type Locale = "en" | "fr" | "es" | "zh"
 
 interface I18nContextType {
   locale: Locale
@@ -16,13 +16,13 @@ interface I18nContextType {
 const I18nContext = createContext<I18nContextType | undefined>(undefined)
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
-  const [locale, setLocale] = useState<Locale>("en")
+  const [locale, setLocale] = useState<Locale>("zh")
 
   // Load locale from localStorage on initial render
   useEffect(() => {
     if (typeof window !== "undefined") {
       const savedLocale = localStorage.getItem("locale") as Locale
-      if (savedLocale && ["en", "fr"].includes(savedLocale)) {
+      if (savedLocale && ["en", "fr", "es", "zh"].includes(savedLocale)) {
         setLocale(savedLocale)
       }
     }

@@ -5,10 +5,13 @@ import { Check, Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { useI18n } from "./i18n-context"
+import type { Locale } from "@/types/locale" // Import Locale type
 
 const languages = [
   { code: "en", name: "English" },
   { code: "fr", name: "Français" },
+  { code: "es", name: "Español" },
+  { code: "zh", name: "中文" },
 ]
 
 export function LanguageSwitcher() {
@@ -31,7 +34,7 @@ export function LanguageSwitcher() {
         {languages.map((language) => (
           <DropdownMenuItem
             key={language.code}
-            onClick={() => setLocale(language.code)}
+            onClick={() => setLocale(language.code as Locale)}
             className="flex items-center justify-between"
           >
             {language.name}

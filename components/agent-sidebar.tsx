@@ -11,6 +11,7 @@ import {
   PieChart,
   MessageSquare,
   SettingsIcon,
+  Brain,
   LogOut,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -135,13 +136,12 @@ export function AgentSidebar({
       <div className="flex h-16 items-center px-4 border-b border-gray-200 bg-[#2A2D35] justify-between">
         <div className="flex items-center gap-2 text-white">
           {!isCollapsed && (
-            <h1 className="text-xl font-bold">
-              <span className="text-[#6C47FF]">M+</span> Insight
-            </h1>
+            <>
+              <Brain className="h-6 w-6 text-[#6C47FF]" />
+              <h1 className="text-lg font-bold">{t("app.title")}</h1>
+            </>
           )}
-          {isCollapsed && (
-            <div className="h-6 w-6 text-[#6C47FF] font-bold text-lg flex items-center justify-center">M+</div>
-          )}
+          {isCollapsed && <Brain className="h-6 w-6 text-[#6C47FF]" />}
         </div>
         <div className="flex items-center gap-2">
           {!isCollapsed && <LanguageSwitcher />}
@@ -219,7 +219,7 @@ export function AgentSidebar({
 
             {!isCollapsed && (
               <div className="px-3 py-2 text-xs text-gray-400 border-t border-gray-700">
-                © {currentYear} modelplus.ai
+                © {currentYear} 上海岱名科技有限公司
               </div>
             )}
           </SidebarFooter>

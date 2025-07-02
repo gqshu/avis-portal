@@ -4,6 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -14,7 +15,7 @@ export default function LoginPage() {
   const { t } = useTranslation()
   const router = useRouter()
   const [email, setEmail] = useState("admin@example.com")
-  const [password, setPassword] = useState("modelplus")
+  const [password, setPassword] = useState("123456")
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
 
@@ -55,8 +56,8 @@ export default function LoginPage() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
       <Card className="w-full max-w-md shadow-xl">
         <CardHeader className="space-y-1 flex flex-col items-center">
-          <div className="w-16 h-16 mb-2 flex items-center justify-center">
-            <div className="text-4xl font-bold text-[#6C47FF]">M+</div>
+          <div className="w-16 h-16 mb-2 relative">
+            <Image src="/avis-tech-logo.png" alt="AVIS Logo" fill className="object-contain" priority />
           </div>
         </CardHeader>
         <form onSubmit={handleSubmit}>
@@ -107,7 +108,7 @@ export default function LoginPage() {
         </form>
       </Card>
 
-      <div className="mt-6 text-sm text-gray-500">© {new Date().getFullYear()} modelplus.ai</div>
+      <div className="mt-6 text-sm text-gray-500">© {new Date().getFullYear()} 上海岱名科技有限公司</div>
     </div>
   )
 }

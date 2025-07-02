@@ -1,90 +1,93 @@
-# AVIS Management System
+# AVIS 管理系统
 
-## Project Overview
+## 项目概述
 
-The AVIS Management System is a modern web application for managing and monitoring intelligent agents. The system provides features for task editing, agent deployment, monitoring, and analysis.
+AVIS 管理系统是一个用于管理和监控智能代理的现代化 Web 应用程序。该系统提供了任务编辑、代理部署、监控和分析等功能。
 
-## Building and Testing Locally
+## 在本地构建和测试
 
-### System Requirements
+### 系统要求
 
-- Node.js 18.0.0 or higher
-- npm 8.0.0 or higher
-- Modern browser (Chrome, Firefox, Safari, Edge, etc.)
+- Node.js 18.0.0 或更高版本
+- npm 8.0.0 或更高版本
+- 现代浏览器（Chrome, Firefox, Safari, Edge 等）
 
-### Installation Steps
+### 安装步骤
 
-1. Clone the repository locally
+1. 克隆仓库到本地
 
 \`\`\`bash
 git clone https://github.com/your-organization/avis-management.git
 cd avis-management
 \`\`\`
 
-2. Install dependencies
+2. 安装依赖包
 
 \`\`\`bash
 npm install --legacy-peer-deps
 \`\`\`
 
-3. Start the development server
+3. 启动开发服务器
 
 \`\`\`bash
 npm run dev
 \`\`\`
 
-4. Access the application in your browser
+4. 在浏览器中访问应用
 
-Open your browser and visit [http://localhost:3000](http://localhost:3000)
+打开浏览器并访问 [http://localhost:3000](http://localhost:3000)
 
-### Building for Production
+### 构建生产版本
 
-To build the application for production environment, run:
+要构建用于生产环境的应用程序，请运行：
 
 \`\`\`bash
 npm run build
 \`\`\`
 
-After the build is complete, you can start the production server with:
+构建完成后，可以使用以下命令启动生产服务器：
 
 \`\`\`bash
 npm start
 \`\`\`
 
-### Running Tests
+### 运行测试
 
-Execute unit tests:
+执行单元测试：
 
 \`\`\`bash
 npm test
 \`\`\`
 
-Execute end-to-end tests:
+执行端到端测试：
 
 \`\`\`bash
 npm run test:e2e
 \`\`\`
 
-### Project Structure
+### 项目结构
 
-- `/app` - Next.js application routes
-- `/components` - React components
-- `/lib` - Utility functions and type definitions
-- `/public` - Static assets
+- `/app` - Next.js 应用路由
+- `/components` - React 组件
+- `/lib` - 工具函数和类型定义
+- `/public` - 静态资源
 
-## Frequently Asked Questions
+## 常见问题解答
 
-### Q: The application won't start, showing port is occupied
-A: You can change the default port by setting the PORT environment variable:
+### Q: 应用无法启动，显示端口被占用
+A: 可以通过设置 PORT 环境变量来更改默认端口：
 \`\`\`bash
 PORT=3001 npm run dev
 \`\`\`
 
-### Q: How to switch languages?
-A: There is a language switcher button in the top right corner of the application, supporting Chinese and English.
+### Q: 如何切换语言？
+A: 应用右上角有语言切换按钮，支持中文和英文。
 
-## Technical Support
+## 技术支持
 
-For any questions, please contact our technical support team: support@daiming.com
+如有任何问题，请联系技术支持团队：support@daiming.com
 
-© 2025 Shanghai Daiming Technology Co., Ltd.
+© 2025 上海岱名科技有限公司
+\`\`\`
+
+Now, let's update the login page to add the copyright information:
