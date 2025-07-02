@@ -13,6 +13,7 @@ import { BlankPanel } from "@/components/monitoring/blank-panel"
 import { LogsPanel } from "@/components/monitoring/logs-panel"
 import { PerformancePanel } from "@/components/monitoring/performance-panel"
 import { AgentChat } from "@/components/copilot/agent-chat"
+import { ResultDashboard } from "@/components/result-dashboard/result-dashboard"
 
 interface MainContentProps {
   activeItem: string
@@ -75,7 +76,7 @@ export function MainContent({ activeItem, activePrimaryItem }: MainContentProps)
       case "logs":
         return <LogsPanel />
       case "resultDashboard":
-        return <BlankPanel title={t("sidebar.menu.analysis.items.resultDashboard")} />
+        return <ResultDashboard />
       case "queryMemory":
         return <QueryMemory />
       case "copilot":

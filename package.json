@@ -3,6 +3,7 @@
     "@monaco-editor/react": "latest",
     "@radix-ui/react-checkbox": "latest",
     "@radix-ui/react-scroll-area": "latest",
+    "@radix-ui/react-select": "latest",
     "@radix-ui/react-slot": "latest",
     "@radix-ui/react-tabs": "latest",
     "@types/react": "latest",

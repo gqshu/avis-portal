@@ -330,6 +330,14 @@ export const translations = {
     "copilot.agent": "Agent",
     "copilot.you": "You",
     "copilot.messagePlaceholder": "Type your message...",
+
+    // Result Dashboard
+    "resultDashboard.dashboard": "Dashboard:",
+    "resultDashboard.outputFrames": "Output Frames",
+    "resultDashboard.active": "Active",
+    "resultDashboard.inactive": "Inactive",
+    "resultDashboard.error": "Error",
+    "resultDashboard.frame": "Frame {number}",
   },
   fr: {
     // App title
@@ -648,6 +656,14 @@ export const translations = {
     "copilot.you": "Vous",
     "copilot.messagePlaceholder": "Tapez votre message...",
     "sidebar.logout": "Déconnexion",
+
+    // Result Dashboard
+    "resultDashboard.dashboard": "Tableau de bord:",
+    "resultDashboard.outputFrames": "Images de Sortie",
+    "resultDashboard.active": "Actif",
+    "resultDashboard.inactive": "Inactif",
+    "resultDashboard.error": "Erreur",
+    "resultDashboard.frame": "Image {number}",
   },
   es: {
     // App title
@@ -968,7 +984,14 @@ export const translations = {
     "copilot.agent": "Agente",
     "copilot.you": "Usted",
     "copilot.messagePlaceholder": "Escriba su mensaje...",
-    "sidebar.logout": "Cerrar sesión",
+
+    // Result Dashboard
+    "resultDashboard.dashboard": "Panel:",
+    "resultDashboard.outputFrames": "Marcos de Salida",
+    "resultDashboard.active": "Activo",
+    "resultDashboard.inactive": "Inactivo",
+    "resultDashboard.error": "Error",
+    "resultDashboard.frame": "Marco {number}",
   },
   zh: {
     // App title
@@ -1288,5 +1311,13 @@ export const translations = {
     "copilot.you": "您",
     "copilot.messagePlaceholder": "输入您的消息...",
     "sidebar.logout": "退出登录",
+
+    // Result Dashboard
+    "resultDashboard.dashboard": "仪表板:",
+    "resultDashboard.outputFrames": "输出帧",
+    "resultDashboard.active": "活跃",
+    "resultDashboard.inactive": "非活跃",
+    "resultDashboard.error": "错误",
+    "resultDashboard.frame": "帧 {number}",
   },
 }
